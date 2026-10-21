@@ -1,5 +1,3 @@
-STREAMING_CHUNK:Docker 컨테이너 기본 환경 설정 중...
-
 가볍고 안정적인 Python 3.9 슬림 버전을 사용합니다.
 
 FROM python:3.9-slim
@@ -15,8 +13,6 @@ COPY requirements.txt .
 pip를 이용해 필수 라이브러리를 설치합니다. (캐시 무시)
 
 RUN pip install --no-cache-dir -r requirements.txt
-
-STREAMING_CHUNK:소스 코드 복사 및 실행 포트 설정 중...
 
 나머지 모든 소스 코드를 컨테이너의 /app 디렉토리로 복사합니다.
 
